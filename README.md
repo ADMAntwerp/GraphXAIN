@@ -34,8 +34,8 @@ To generate GraphXAINs for a given GNN model:
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@mics{cedro2024whyyourgnn,
-  title={Why Your GNN Explainer is Insufficient: XAI Narratives for Complementary Graph Neural Network Explanations with Large Language Models},
+@mics{cedro2024graphxain,
+  title={GraphXAIN: Narratives to Explain Graph Neural Networks},
   author={Mateusz Cedro and David Martens},
   year={2024},
   eprint={},
