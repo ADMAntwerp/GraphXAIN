@@ -16,7 +16,7 @@ Graph Neural Networks (GNNs) are a powerful technique for machine learning on gr
 
 To generate GraphXAINs for a given GNN model:
 
-1. **Prepare Data**: Ensure that you have ready to use graph data or adjacency matrix with feature matrix ready for the input graph.
+1. **Prepare Data**: Ensure you have ready-to-use graph data or adjacency matrix with features matrix ready for the input graph.
 2. **Run the Graph Explainer**: Use ```notebooks/GraphXAIN_tutorial.ipynb``` notebook to extract subgraphs and feature importance values.
 3. **Generate GraphXAINs**:  Use ```notebooks/GraphXAIN_tutorial.ipynb``` notebook to generate GraphXAINs based on the extracted data.
 
@@ -34,14 +34,14 @@ To generate GraphXAINs for a given GNN model:
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@mics{cedro2024graphxain,
-  title={GraphXAIN: Narratives to Explain Graph Neural Networks},
-  author={Mateusz Cedro and David Martens},
-  year={2024},
-  eprint={},
-  primaryClass={},
-  archivePrefix={arXiv},
-  url={https://arxiv.org/abs/..}
+@misc{cedro2024graphxainnarrativesexplaingraph,
+      title={GraphXAIN: Narratives to Explain Graph Neural Networks}, 
+      author={Mateusz Cedro and David Martens},
+      year={2024},
+      eprint={2411.02540},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2411.02540}, 
 }
 ```
 
