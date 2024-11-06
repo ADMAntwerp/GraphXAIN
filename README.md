@@ -25,7 +25,7 @@ To generate GraphXAINs for a given GNN model:
 
 - `dataset/`: Contains sample datasets used in the paper.
 - `explanations/`: Contains outputs from graph explainer.
-- `images/`: Contains images used in publication 
+- `images/`: Contains images used in publication.
 - `notebooks/`: Jupyter notebook for generation GraphXAINs.
 - `utils/`: Contains ```model.py``` with GNN model and ```utils.py``` with utility functions.
 
