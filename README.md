@@ -34,14 +34,11 @@ To generate GraphXAINs for a given GNN model:
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@misc{cedro2024graphxainnarrativesexplaingraph,
-      title={GraphXAIN: Narratives to Explain Graph Neural Networks}, 
-      author={Mateusz Cedro and David Martens},
-      year={2024},
-      eprint={2411.02540},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2411.02540}, 
+@article{cedro2024graphxain,
+  title={GraphXAIN: Narratives to Explain Graph Neural Networks},
+  author={Cedro, Mateusz and Martens, David},
+  journal={arXiv preprint arXiv:2411.02540},
+  year={2024}
 }
 ```
 
