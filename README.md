@@ -1,6 +1,6 @@
 # GraphXAIN: Narratives to Explain Graph Neural Networks
 
-This repository contains the official implementation for the article **"GraphXAIN: Narratives to Explain Graph Neural Networks"**. Our method integrates Graph Neural Networks (GNNs), graph explainers, and Large Language Models (LLMs) to generate GraphXAINs — explainable AI (XAI) narratives that provide enhanced interpretability of GNN predictions.
+This repository contains the official implementation for the article **"GraphXAIN: Narratives to Explain Graph Neural Networks** (Cedro & Martens, 2024). Our method integrates Graph Neural Networks (GNNs), graph explainers, and Large Language Models (LLMs) to generate GraphXAINs, explainable AI (XAI) narratives that enhance the interpretability of GNN predictions.
 
 # Workflow
 ![Workflow Diagram](images/XAIN_workflow.png)
@@ -10,24 +10,27 @@ This repository contains the official implementation for the article **"GraphXAI
 
 ## Abstract
 
-Graph Neural Networks (GNNs) are a powerful technique for machine learning on graph-structured data, yet they pose interpretability challenges, especially for non-expert users. Existing GNN explanation methods often yield technical outputs such as subgraphs and feature importance scores, which are not easily understood. Building on recent insights from social science and other Explainable AI (XAI) methods, we propose *GraphXAIN*, a natural language narrative that explains individual predictions made by GNNs. We present a model-agnostic and explainer-agnostic XAI approach that complements graph explainers by generating GraphXAINs—coherent narratives explaining the GNN's prediction process—using Large Language Models (LLMs) and integrating graph data, individual predictions from GNNs, explanatory subgraphs, and feature importances. We define XAI Narratives and XAI Descriptions, highlighting their distinctions and emphasizing the importance of narrative principles in effective explanations. By incorporating natural language narratives, our approach supports graph practitioners and non-expert users, aligning with social science research on explainability and enhancing user understanding and trust in complex GNN models. We demonstrate GraphXAIN's capabilities on a real-world graph dataset, illustrating how its generated narratives can aid understanding compared to traditional graph explainer outputs or other descriptive explanation methods.
+Graph Neural Networks (GNNs) are a powerful technique for machine learning on graph-structured data, yet they pose challenges in interpretability. Existing GNN explanation methods usually yield technical outputs, such as subgraphs and feature importance scores, that are difficult for non-data scientists to understand and thereby violate the purpose of explanations. Motivated by recent Explainable AI (XAI) research, we propose *GraphXAIN*, a method that generates natural language narratives explaining GNN predictions. GraphXAIN is a model- and explainer-agnostic method that uses Large Language Models (LLMs) to translate explanatory subgraphs and feature importance scores into coherent, story-like explanations of GNN decision-making processes. Evaluations on real-world datasets demonstrate GraphXAIN's ability to improve graph explanations. A survey of machine learning researchers and practitioners reveals that GraphXAIN enhances four explainability dimensions: understandability, satisfaction, convincingness, and suitability for communicating model predictions. When combined with another graph explainer method, GraphXAIN further improves trustworthiness, insightfulness, confidence, and usability. Notably, 95% of participants found GraphXAIN to be a valuable addition to the GNN explanation method. By incorporating natural language narratives, our approach serves both graph practitioners and non-expert users by providing clearer and more effective explanations.
 
 ## Usage
 
 To generate GraphXAINs for a given GNN model:
 
 1. **Prepare Data**: Ensure you have ready-to-use graph data or adjacency matrix with features matrix ready for the input graph.
-2. **Run the Graph Explainer**: Use ```notebooks/GraphXAIN_tutorial.ipynb``` notebook to extract subgraphs and feature importance values.
-3. **Generate GraphXAINs**:  Use ```notebooks/GraphXAIN_tutorial.ipynb``` notebook to generate GraphXAINs based on the extracted data.
+2. **Train GNN Model**: Train your GNN model.
+3. **Run the Graph Explainer**: Follow the ```notebooks/GraphXAIN_tutorial.ipynb``` notebook to extract subgraphs and feature importance values.
+4. **Generate GraphXAINs**:  Follow the ```notebooks/GraphXAIN_tutorial.ipynb``` notebook to generate GraphXAINs based on the extracted data.
 
 
 ## Repository Structure
 
-- `dataset/`: Contains sample datasets used in the paper.
+- `datasets/`: Contains sample datasets used in the paper.
+- `notebooks/`: Jupyter notebooks to generate GraphXAINs.
 - `explanations/`: Contains outputs from graph explainer.
-- `images/`: Contains images used in publication.
-- `notebooks/`: Jupyter notebook for generation GraphXAINs.
 - `utils/`: Contains ```model.py``` with GNN model and ```utils.py``` with utility functions.
+- `images/`: Contains images used in publication.
+- `survey/`: Contains survey results conducted to do human evaluation of GraphXAINs.
+
 
 ## Citation
 
