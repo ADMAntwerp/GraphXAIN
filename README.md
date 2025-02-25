@@ -21,6 +21,34 @@ To generate GraphXAINs for a given GNN model:
 3. **Run the Graph Explainer**: Follow the ```notebooks/GraphXAIN_tutorial.ipynb``` notebook to extract subgraphs and feature importance values.
 4. **Generate GraphXAINs**:  Follow the ```notebooks/GraphXAIN_tutorial.ipynb``` notebook to generate GraphXAINs based on the extracted data.
 
+## Required Changes in PyTorch Geometric
+
+To successfully run the code in this repository, **you must modify** certain functions in PyTorch Geometric. We have provided a file, `pyg_modifications.py`, which contains **all** the updated functions needed.
+
+1. **Open our `pyg_modifications.py`**  
+   - This file is in the root of this repo (or wherever you placed it).
+   - Inside, you’ll find code blocks for each function that needs patching:
+     - `Explanation.visualize_graph`
+     - `HeteroExplanation.visualize_feature_importance`
+     - `_visualize_score`
+     - `_visualize_graph_via_graphviz`
+
+2. **Copy each code block** into PyTorch Geometric  
+   - For example, copy the `visualize_graph` block into:
+     ```
+     torch_geometric/explain/explanation.py
+     ```
+     within the `Explanation` class.
+   - Similarly, copy the `visualize_feature_importance` block into the `HeteroExplanation` class in the same file.
+   - Copy the `_visualize_score` function wherever it is declared in that file (either replacing the existing one or adding it if missing).
+   - Lastly, copy the `_visualize_graph_via_graphviz` block into:
+     ```
+     torch_geometric/visualization/graph.py
+     ```
+     replacing the existing function if present.
+
+**Note:** Please ensure you run notebooks from the **root directory** of this repository. This guarantees that the file paths and environment references will resolve correctly.
+
 
 ## Repository Structure
 
