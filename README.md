@@ -2,10 +2,13 @@
 
 This repository contains the official implementation for the article **GraphXAIN: Narratives to Explain Graph Neural Networks** (Cedro & Martens, 2024). Our method integrates Graph Neural Networks (GNNs), graph explainers, and Large Language Models (LLMs) to generate GraphXAINs, explainable AI (XAI) narratives that enhance the interpretability of GNN predictions.
 
-# Workflow
-![Workflow Diagram](images/XAIN_workflow.png)
+<p align="center">
+  <img src="images/XAIN_workflow.png" alt="Workflow Diagram" width="600" />
+</p>
 
-![XAIN_57](images/XAIN_57.png)
+<p align="center">
+  <img src="images/XAIN_57.png" alt="XAIN 57" width="400" />
+</p>
 
 
 ## Abstract
